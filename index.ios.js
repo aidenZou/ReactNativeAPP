@@ -6,8 +6,13 @@
 
 var React = require('react-native');
 
-var App = require('./pages/TabBar');
 // var UIExplorerApp = require('./Examples/UIExplorer/UIExplorerApp.ios');
+// var App = require('./components/Nav');
+// var App = require('./Examples/UIExplorer/Navigator/NavigatorExample');
+
+var App = require('./components/TabBar');
+// var App = require('./pages/MeiTuan');
+// var App = require('./pages/Ctrip');
 
 var {
   AppRegistry,

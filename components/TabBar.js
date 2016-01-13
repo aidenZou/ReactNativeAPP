@@ -2,7 +2,8 @@
 
 var React = require('react-native');
 // var NavigatorIOS = require('NavigatorIOS');
-var PageIndex = require('./PageIndex');
+var PageIndex = require('../pages/Index');
+var PageI = require('../pages/I');
 
 var UIExplorerApp = require('../Examples/UIExplorer/UIExplorerApp.ios');
 
@@ -41,18 +42,14 @@ var TabBarExample = React.createClass({
       </View>
     );
   },
-
-  _renderIndexPage: function() {
+  _renderPageIndex: function() {
     return (
       <PageIndex/>
     );
   },
-
-  _renderIPage: function() {
+  _renderPageI: function() {
     return (
-      <View>
-        <Text>我就是我，不一样滴烟火~~</Text>
-      </View>
+      <PageI/>
     );
   },
   _renderExplorerPage: function() {
@@ -65,7 +62,8 @@ var TabBarExample = React.createClass({
     return (
       <TabBarIOS
         tintColor="green"
-        barTintColor="white">
+        barTintColor="white"
+        style={[styles.tabBar]}>
         <TabBarIOS.Item
           title="首页"
           icon={{uri: base64Icon, scale: 3}}
@@ -75,7 +73,7 @@ var TabBarExample = React.createClass({
               selectedTab: 'indexTab',
             });
           }}>
-          {this._renderIndexPage()}
+          {this._renderPageIndex()}
         </TabBarIOS.Item>
         <TabBarIOS.Item
           systemIcon="history"
@@ -87,7 +85,7 @@ var TabBarExample = React.createClass({
               notifCount: this.state.notifCount + 1,
             });
           }}>
-          {this._renderContent('#783E33', 'Red Tab', this.state.notifCount)}
+          {this._renderContent('#252535', 'Red Tab', this.state.notifCount)}
         </TabBarIOS.Item>
         <TabBarIOS.Item
           icon={require('../imgs/flux.png')}
@@ -99,7 +97,7 @@ var TabBarExample = React.createClass({
               presses: this.state.presses + 1
             });
           }}>
-          {this._renderIPage()}
+          {this._renderPageI()}
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Explorer"
@@ -119,6 +117,12 @@ var TabBarExample = React.createClass({
 });
 
 var styles = StyleSheet.create({
+  tabBar: {
+    borderTopColor: 'red',
+    borderTopWidth: 0.5,
+    // borderTopWidth
+
+  },
   tabContent: {
     flex: 1,
     alignItems: 'center',
