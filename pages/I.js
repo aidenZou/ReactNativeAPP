@@ -1,7 +1,8 @@
 'use strict';
 
-
 var React = require('react-native');
+var cssVar = require('cssVar');
+
 var {
   PixelRatio,
   Navigator,
@@ -11,8 +12,6 @@ var {
   TouchableHighlight,
   TouchableOpacity,
 } = React;
-
-var cssVar = require('cssVar');
 
 class NavButton extends React.Component {
   render() {
