@@ -302,13 +302,13 @@ var PicBanner = React.createClass({
 module.exports = React.createClass({
   render: function() {
     return (
-      <ScrollView style={styles.container}>
-        <View>
+      // <ScrollView style={styles.container}>
+        <View style={styles.container}>
           <Slider/>
           <Nav/>
           <PicBanner/>
         </View>
-      </ScrollView>
+      // </ScrollView>
     );
   }
 });

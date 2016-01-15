@@ -5,6 +5,17 @@
 'use strict';
 
 var React = require('react-native');
+
+// var UIExplorerApp = require('./Examples/UIExplorer/UIExplorerApp.ios');
+// var App = require('./components/Nav');
+// var App = require('./Examples/UIExplorer/Navigator/NavigatorExample');
+
+// var App = require('./components/TabBar');
+// var App = require('./pages/MeiTuan');
+// var App = require('./pages/Ctrip');
+// var App = require('./pages/Dropdown');
+var App = require('./pages/Index');
+
 var {
   AppRegistry,
   StyleSheet,
@@ -15,17 +26,7 @@ var {
 var ReactNativeAPP = React.createClass({
   render: function() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <App/>
     );
   }
 });
@@ -36,16 +37,6 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
