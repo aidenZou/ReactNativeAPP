@@ -302,8 +302,8 @@ var PicBanner = React.createClass({
 module.exports = React.createClass({
   render: function() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
+      <ScrollView style={styles.container}>
+        <View>
           <Slider/>
           <Nav/>
           <PicBanner/>

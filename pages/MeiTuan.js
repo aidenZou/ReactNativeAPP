@@ -15,7 +15,6 @@ var styles = StyleSheet.create({
     flex: 1,
     // justifyContent: 'center',
     // alignItems: 'center',
-
     backgroundColor: '#f0efed',
   },
   row: {
@@ -135,8 +134,8 @@ var Row = React.createClass({
 module.exports = React.createClass({
   render: function() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
+      <ScrollView style={styles.container}>
+        <View>
           <Row/>
         </View>
       </ScrollView>

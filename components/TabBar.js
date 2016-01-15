@@ -5,7 +5,7 @@ var React = require('react-native');
 var PageIndex = require('../pages/Index');
 var PageI = require('../pages/I');
 
-var PageText = require('../pages/Text');
+// var PageTest = require('../pages/Test');
 
 var UIExplorerApp = require('../Examples/UIExplorer/UIExplorerApp.ios');
 
@@ -46,7 +46,8 @@ var TabBarExample = React.createClass({
   },
   _renderPageIndex: function() {
     return (
-      <PageText/>
+      <PageI/>
+      // <PageTest/>
     );
   },
   _renderPageI: function() {
