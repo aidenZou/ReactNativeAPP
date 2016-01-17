@@ -11,10 +11,10 @@ var React = require('react-native');
 // var App = require('./Examples/UIExplorer/Navigator/NavigatorExample');
 
 // var App = require('./components/TabBar');
-var App = require('./pages/MeiTuan');
+// var App = require('./pages/MeiTuan');
 // var App = require('./pages/Ctrip');
 // var App = require('./pages/Dropdown');
-// var App = require('./pages/Index');
+var App = require('./pages/Index');
 
 var {
   AppRegistry,
@@ -26,6 +26,7 @@ var {
 var ReactNativeAPP = React.createClass({
   render: function() {
     return (
+      // <Text>11111</Text>
       <App/>
     );
   }

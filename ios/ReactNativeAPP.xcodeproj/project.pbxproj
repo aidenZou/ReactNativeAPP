@@ -663,6 +663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.aidenzou.ReactNativeAPP;
 				PRODUCT_NAME = ReactNativeAPP;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -684,6 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.aidenzou.ReactNativeAPP;
 				PRODUCT_NAME = ReactNativeAPP;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

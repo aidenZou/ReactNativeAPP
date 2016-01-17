@@ -32,6 +32,7 @@ var NavigationBarRouteMapper = {
 
     var previousRoute = navState.routeStack[index - 1];
     // <Icon name="angle-left" size={30} color="#900" />
+    // <Text style={[styles.navBarText, styles.navBarButtonText]}>返回</Text>
     return (
       <TouchableOpacity
         onPress={() => navigator.pop()}
@@ -41,9 +42,6 @@ var NavigationBarRouteMapper = {
           size={40}
           color='#fff'
           style={[{width: 15, height: 40}]}/>
-        <Text style={[styles.navBarText, styles.navBarButtonText]}>
-          返回
-        </Text>
       </TouchableOpacity>
     );
   },
@@ -96,6 +94,18 @@ function goLoginRandomRoute() {
 }
 
 var ROUTE_STACK = [{
+  sence: 'douban',
+  title: "豆瓣:影院热映",
+  sceneConfig: null,
+}, {
+  sence: 'meituan',
+  title: "美团外卖",
+  sceneConfig: Navigator.SceneConfigs.FloatFromRight,
+}, {
+  sence: 'ctrip',
+  title: "携程",
+  sceneConfig: null,
+}, {
   sence: 'icon',
   title: "Icon",
   sceneConfig: null,
@@ -115,18 +125,6 @@ var ROUTE_STACK = [{
   sence: '3',
   title: "底部进入",
   sceneConfig: Navigator.SceneConfigs.FloatFromBottom,
-}, {
-  sence: 'meituan',
-  title: "美团外卖",
-  sceneConfig: Navigator.SceneConfigs.FloatFromRight,
-}, {
-  sence: 'ctrip',
-  title: "携程",
-  sceneConfig: null,
-}, {
-  sence: 'douban',
-  title: "豆瓣:影院热映",
-  sceneConfig: null,
 }, {
   sence: 'login',
   title: "登录",
@@ -192,7 +190,7 @@ module.exports = React.createClass({
     return (
       <Navigator
         sceneStyle={[styles.containerApp]}
-        initialRoute={ROUTE_STACK[7]}
+        initialRoute={ROUTE_STACK[9]}
         renderScene={this._renderScene}
         configureScene={this._configureScene}
         navigationBar={
@@ -215,7 +213,7 @@ module.exports = React.createClass({
   },
   // 渲染指定路由的场景
   _renderScene: function (route, navigator) {
-    console.log(route.sence)
+    // console.log(route.sence)
     // console.log(navigator)
     // <Text style={[{marginTop:100}]}>111</Text>
     // return (
