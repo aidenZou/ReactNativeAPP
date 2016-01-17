@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m"
+            timestampString = "474696670.491379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1351"
+            endingLineNumber = "1351"
+            landmarkName = "-stream:handleEvent:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RCTSRWebSocket stream:handleEvent:]"
+                  moduleName = "ReactNativeAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aidenZou/www/github/ReactNativeAPP/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m"
+                  timestampString = "474696670.538912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1351"
+                  endingLineNumber = "1351"
+                  offsetFromSymbolStart = "1434">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[RCTSRWebSocket stream:handleEvent:]_block_invoke465"
+                  moduleName = "ReactNativeAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aidenZou/www/github/ReactNativeAPP/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m"
+                  timestampString = "474696670.540185"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1351"
+                  endingLineNumber = "1351"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m"
+            timestampString = "474696671.804511"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1352"
+            endingLineNumber = "1352"
+            landmarkName = "-stream:handleEvent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
