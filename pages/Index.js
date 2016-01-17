@@ -12,6 +12,7 @@ var PageDropdown = require('./Dropdown');
 var PageDropdownSimple = require('./DropdownSimple');
 var TabBar = require('../components/TabBar');
 var PageIcon = require('./Icon');
+var PageDoubanIndex = require('./DoubanIndex');
 
 var {
   StyleSheet,
@@ -123,6 +124,10 @@ var ROUTE_STACK = [{
   title: "携程",
   sceneConfig: null,
 }, {
+  sence: 'douban',
+  title: "豆瓣:影院热映",
+  sceneConfig: null,
+}, {
   sence: 'login',
   title: "登录",
   sceneConfig: Navigator.SceneConfigs.FloatFromBottom,
@@ -187,7 +192,7 @@ module.exports = React.createClass({
     return (
       <Navigator
         sceneStyle={[styles.containerApp]}
-        initialRoute={ROUTE_STACK[8]}
+        initialRoute={ROUTE_STACK[7]}
         renderScene={this._renderScene}
         configureScene={this._configureScene}
         navigationBar={
@@ -234,6 +239,10 @@ module.exports = React.createClass({
           <PageCtrip navigator={navigator} />
         )
         break;
+      case 'douban':
+      return (
+        <PageDoubanIndex route={route} navigator={navigator} />
+      )
       case 'dropdownSimple':
         return (
           <TabBar/>
